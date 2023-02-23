@@ -1,0 +1,18 @@
+
+type Folder {
+  id: Int!
+  foldername: String
+  type: String
+}
+
+
+type Query {
+  folders: [Folder]
+}
+
+type Mutation {
+  updateFolderName(folder_id: Int!, foldername: String): Folder
+}
+
+
+
